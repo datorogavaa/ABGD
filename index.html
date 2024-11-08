@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <style>
+        /* General Reset for styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background and container styling */
+        body {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Centered content div */
+        #div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 90%; /* Responsive width */
+        }
+
+        /* Styling for the text */
+        p {
+            font-size: 6vw; /* Font size adjusts with the width of the screen */
+            margin: 20px 0;
+            color: black;
+        }
+
+        /* Button styling */
+        button {
+            font-size: 5vw; /* Responsive button font size */
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Small adjustments for very small screens */
         @media (max-width: 375px) {
             p {
-                font-size: 8vw; 
+                font-size: 8vw; /* Larger text on smaller screens */
             }
 
             button {
